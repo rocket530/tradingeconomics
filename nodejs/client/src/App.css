@@ -1,0 +1,91 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+/* Style for even rows */
+.ant-table-tbody > tr:nth-child(even) {
+  background-color: #ececec;
+}
+
+/* Style for odd rows */
+.ant-table-tbody > tr:nth-child(odd) {
+  background-color: #fafafa; /* Light gray */
+}
+
+/* Optional: Hover effect */
+.ant-table-tbody > tr:hover > td {
+  background-color: #bfbfbf !important; /* Highlight on hover */
+}
+
+.ant-select {
+  margin-right:20px;
+}
+
+
+.container {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  row-gap: 10px;
+}
+.row-1 {
+  background-color: #ffeb3d;
+  
+  text-align: left;
+}
+.row-2 {
+  display: grid;
+  grid-template-columns: 70vw 30vw;
+  gap: 10px;
+}
+.row-2 .col-60 {
+  box-sizing: border-box;
+  padding: 30px;
+}
+.row-2 .col-40 {
+  box-sizing: border-box;
+  padding: 20px;
+  margin:20px;
+}
+.row-3 {
+  background-color: #c8e6c9;
+  
+  text-align: center;
+}
